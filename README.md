@@ -7,7 +7,7 @@
 
 <br/>
 
-### Contact With me:
+### Contact & Follow Me:
 
 [![LinkedIn Connect](https://cdn2.iconfinder.com/data/icons/social-18/512/LinkedIn-20.png)](https://www.linkedin.com/in/mxasraful/) 
 [![Facebook Follow](https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-20.png)](https://facebook.com/mxasrafulofficial/) 
