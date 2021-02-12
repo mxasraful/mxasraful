@@ -1,4 +1,3 @@
-<img align="right" width="300px" src="https://mxasraful.netlify.app/static/media/Asrafuls_phopto.ee6e9357.png" />
 
 ## Hello! I'm Asraful
 
