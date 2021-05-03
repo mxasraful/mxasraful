@@ -109,11 +109,7 @@ const Contact = () => {
                             </div>
                             <div className="text-light">
                                 <span className=''>Phone:</span><br />
-                                <a className="text-light" href="tel: +8801865430932">+8801865430932</a>
-                            </div>
-                            <div className="text-light">
-                                <span className=''>Address:</span><br />
-                                <a href>135 Abdullahpur, Tongibari, Munshiganj-1500</a>
+                                <a className="text-light" href="tel: +8801821892715">+880 1821-892715</a>
                             </div>
                             <div style={{ width: '250px' }} className="text-light">
                                 <span className=''>Social:</span><br />
