@@ -103,6 +103,8 @@ const Contact = () => {
                         </form>
                         <div className="col-2 contactSpace"></div>
                         <div className="contactInfo">
+                            <h3 style={{marginTop: "100px", color: "#ffff"}}>Get In Touch</h3>
+                            <hr />
                             <div className="text-light">
                                 <span className=''>Email:</span><br />
                                 <a className="text-light" href="mailto: mxasraful@outlook.com">mxasraful@outlook.com</a>
