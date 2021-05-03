@@ -1,0 +1,15 @@
+.footerMain{
+    padding: 20px 0;
+}
+.footerLinks a{
+    color: #e7e7e7;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.footerLinks a svg{
+    margin-top: -5px;
+    margin-right: 3px;
+}
+.footerFork{
+    margin-right: 0px !important;
+}

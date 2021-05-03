@@ -1,0 +1,29 @@
+.aboutS{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.aboutImg img{
+    width: 95%;
+    margin: 2.5% ;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: all .4s;
+}
+.aboutImg img:hover{
+    width: 100%;
+    margin: 0;
+    filter: none;
+}
+.aboutText h4{
+    line-height: 50px;
+}
+.aboutContent{
+    display: flex;
+}
+.aboutImg{
+    width: 40%;
+}
+.aboutText{
+    width: 60%;
+    margin-left: 110px;
+}

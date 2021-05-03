@@ -1,0 +1,51 @@
+#headerMain{
+    transition: all .4s;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+.fixedHeader{
+    background: #292f3c !important;
+    height: 80px;
+    padding: 0;
+}
+
+.nav-item{
+    margin-right: 30px;
+}
+
+.nav-item a{
+    color: #DBF2F9 !important;
+    text-decoration: none !important;
+    margin-top: 0px !important;
+    display: block !important;
+}
+
+.nav-item .active{
+    color: #cccccc !important;
+}
+
+.navbar{
+    background-color: #292f3c;
+    border-radius: 10px;
+}
+
+.navbar .show a{
+    margin-top: 20px !important;
+}
+.navbar .collapsing a{
+    margin-top: 20px !important;
+}
+
+/* .navbar .collapsing .nav_resume a{
+    margin-bottom: 20px !important;
+} */

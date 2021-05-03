@@ -1,0 +1,26 @@
+.workContent{
+    display: block;
+    margin-bottom: 50px;
+    text-decoration: none !important;
+}
+.workContentDetails{
+    padding: 20px 20px 20px 40px;
+    background-color: #1b203a;
+    border-radius: 0 0 12px 12px ;
+}
+.workContent div a svg{
+    margin-top: 15px !important;
+    margin-right: 15px !important;
+}
+.workContentImg{
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.useLanguageAndTools{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+

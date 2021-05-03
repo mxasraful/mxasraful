@@ -1,0 +1,59 @@
+.pageTitle{
+    position: absolute;
+    margin-top: 26px;
+    padding-right: 20px;
+    background-color: #232a38;
+}
+.contactSectionMain{
+    display: flex;
+}
+.contactForm{
+    padding: 20px;
+    margin-top: 80px;
+    background-color: rgb(25 32 55);
+    border-radius: 10px;
+    height: 450px;
+}
+.contactInfo{
+    width: 33%;
+}
+.contactMain{
+    padding-top: 100px;
+}
+.contactInfo div{
+    margin: 55px 0;
+}
+.contactInfo a{
+    font-size: 25px;
+}
+.contactInputBox{
+    width: 100% !important;
+    margin-bottom: 20px !important;
+}
+.contactInputBox input{
+    color: rgb(255, 255, 255) !important;
+}
+.contactInputBox textarea{
+    color: rgb(255, 255, 255) !important;
+}
+.contactInputBox label{
+    color: thistle !important;
+}
+.contactInputBox input::before{
+    background-color: thistle !important;
+}
+.MuiFilledInput-underline::before{
+    border-bottom: 1px solid #aaaaaa !important;
+}
+.MuiFormLabel-colorSecondary.Mui-focused{
+    color: #ffffff !important;
+}
+.MuiFilledInput-root{
+    background-color: rgb(126, 126, 126, 9%);
+}
+.MuiFilledInput-root:hover{
+    background-color: rgba(126, 126, 126, 0.123) !important;
+}
+.MuiFilledInput-root.Mui-focused{
+    background-color: rgba(126, 126, 126, 0.349) !important;
+}
