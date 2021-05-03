@@ -53,7 +53,7 @@ const Contact = () => {
             <div className="container">
                 <div className="row">
                     <br /><br /><br />
-                    <h2 className="pageTitle text-info">Get In Touch</h2>
+                    <h2 className="pageTitle text-info">Contact Us</h2>
                     <div class="sectionTitlesBackLine"></div>
                     <div className="contactSectionMain">
                         <form className='contactForm' onSubmit={sendMsg} noValidate autoComplete="off">
