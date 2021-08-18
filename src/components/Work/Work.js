@@ -15,7 +15,7 @@ const Work = () => {
             .then(data => {
                 const sortedDt = data.sort((a, b) => {
                     return parseInt(a.nu) - parseInt(b.nu)
-                  })
+                })
                 setWorkDt(sortedDt.slice(0, 3))
                 setPortfolioLoaded(true)
             })
@@ -29,16 +29,18 @@ const Work = () => {
                 <br />
                 <div className="workContentMain row">
                     {
-                        portfolioLoaded?
+                        portfolioLoaded ?
                             <>
                                 {workDt.map(dt =>
-                                    <WorkSection work={dt}/>
+                                    <WorkSection work={dt} />
                                 )}
                             </>
                             :
                             <div className="portfolioLoader">
-                                <div className="portfolioLoaderImgSection">
-                                    <img src={spinner} alt="Mx Asraful Portfolio" className="portfolioLoaderImg"/>
+                                <div className="portfolioLoaderImgSection text-center">
+                                    <div class="spinner-border text-secondary" role="status">
+                                        <span class="visually-hidden"></span>
+                                    </div>
                                 </div>
                             </div>
 

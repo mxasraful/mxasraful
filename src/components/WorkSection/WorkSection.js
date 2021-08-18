@@ -1,11 +1,20 @@
 import React from 'react';
 
 const WorkSection = (props) => {
-    const { title, img, link, gh, skill1, skill2, skill3, skill4, skill5, skill6, skill7, skill8, skill9, skill10 } = props.work
+    const { title, img, link, gh, skills, type } = props.work
 
     return (
         <div className="workContent col-sm-4">
-            <img alt="Mx Asraful" className="workContentImg" src={img}/>
+            {
+                type === 'graphics' ?
+                    <div className="workItemGraphics d-flex align-items-center justify-content-center">
+                        <div className="">
+                            <img alt="Mx Asraful" className="workContentImg workItemGraphicsImg" src={img} />
+                        </div>
+                    </div>
+                    :
+                    <img alt="Mx Asraful" className="workContentImg" src={img} />
+            }
             <div style={{ width: '100%' }} className="workContentDetails">
                 <h5 className='text-info'>{title}</h5><br />
                 {
@@ -13,34 +22,9 @@ const WorkSection = (props) => {
                 }
                 <div className="useLanguageAndTools">
                     {
-                        skill1.length > 0 ? <span className="skillNameBlock">{skill1}</span> : ""
-                    }
-                    {
-                        skill2.length > 0 ? <span className="skillNameBlock">{skill2}</span> : ""
-                    }
-                    {
-                        skill3.length > 0 ? <span className="skillNameBlock">{skill3}</span> : ""
-                    }
-                    {
-                        skill4.length > 0 ? <span className="skillNameBlock">{skill4}</span> : ""
-                    }
-                    {
-                        skill5.length > 0 ? <span className="skillNameBlock">{skill5}</span> : ""
-                    }
-                    {
-                        skill6.length > 0 ? <span className="skillNameBlock">{skill6}</span> : ""
-                    }
-                    {
-                        skill7.length > 0 ? <span className="skillNameBlock">{skill7}</span> : ""
-                    }
-                    {
-                        skill8.length > 0 ? <span className="skillNameBlock">{skill8}</span> : ""
-                    }
-                    {
-                        skill9.length > 0 ? <span className="skillNameBlock">{skill9}</span> : ""
-                    }
-                    {
-                        skill10.length > 0 ? <span className="skillNameBlock">{skill10}</span> : ""
+                        skills?.map(dt => (
+                            <span className="skillNameBlock">{dt}</span>
+                        ))
                     }
                 </div><br />
                 {

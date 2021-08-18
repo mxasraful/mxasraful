@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import WorkSection from '../WorkSection/WorkSection';
-import spinner from './../../spinner/spinner2.svg';
+import './Portfolio.css'
 
 const Portfolio = () => {
 
-    const [data, setData] = useState([]);
+    const [webData, setWebData] = useState([]);
+    const [graphicsData, setGraphicsData] = useState([]);
+    const [portfoliosWeb, setPortfoliosWeb] = useState(true)
 
     const [portfolioLoaded, setPortfolioLoaded] = useState(false)
 
@@ -12,13 +14,20 @@ const Portfolio = () => {
         fetch('https://serene-peak-05996.herokuapp.com/portfolios')
             .then(response => response.json())
             .then(data => {
-                const sortedDt = data.sort((a, b) => {
-                    return parseInt(a.nu) - parseInt(b.nu)
-                })
-                setData(sortedDt)
+                const filterData = (fdt) => {
+                    const fData = data.filter(dt => dt.type === fdt)
+                    const sortedDt = fData.sort((a, b) => {
+                        return parseInt(a.nu) - parseInt(b.nu)
+                    })
+                    return sortedDt
+                }
+                setWebData(filterData("web"))
+                setGraphicsData(filterData("graphics"))
                 setPortfolioLoaded(true)
             });
     }, [])
+
+    console.log(webData)
 
     return (
         <section style={{ paddingTop: '150px', marginBottom: '-8px' }} id="portfolio" className='portfolioMain bg_dark_blue'>
@@ -29,19 +38,40 @@ const Portfolio = () => {
                 <div className="row">
                     {
                         portfolioLoaded ?
-                            <div className="card-deck workContentMain">
+                            <>
+                                <div className="portfoliosSectionChanger pb-5 d-flex">
+                                    <button onClick={() => setPortfoliosWeb(true)} style={{ marginRight: "20px" }} className={portfoliosWeb ? "btn btn-outline-danger btn-sm px-4 active" : "btn btn-outline-danger btn-sm px-4"}>Website Design & Development</button>
+                                    <button onClick={() => setPortfoliosWeb(false)} className={portfoliosWeb ? "btn btn-outline-danger btn-sm px-4" : "btn btn-outline-danger btn-sm px-4 active"}>Graphics Design</button>
+                                </div>
                                 {
-                                    data.map(wk =>
-                                        <WorkSection work={wk}>
-                                            <p className="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
-                                        </WorkSection>
-                                    )
+                                    portfoliosWeb ?
+                                        <div className="card-deck workContentMain">
+                                            {
+                                                webData.map(wk =>
+                                                    <WorkSection work={wk}>
+                                                        <p className="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
+                                                    </WorkSection>
+                                                )
+                                            }
+                                        </div>
+                                        :
+                                        <div className="card-deck workContentMain">
+                                            {
+                                                graphicsData.map(wk =>
+                                                    <WorkSection work={wk}>
+                                                        <p className="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
+                                                    </WorkSection>
+                                                )
+                                            }
+                                        </div>
                                 }
-                            </div>
+                            </>
                             :
                             <div className="portfolioLoader">
-                                <div className="portfolioLoaderImgSection">
-                                    <img src={spinner} alt="Mx Asraful Portfolio" className="portfolioLoaderImg" />
+                                <div className="portfolioLoaderImgSection text-center">
+                                    <div class="spinner-border text-secondary" role="status">
+                                        <span class="visually-hidden"></span>
+                                    </div>
                                 </div>
                             </div>
                     }

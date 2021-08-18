@@ -1,0 +1,12 @@
+
+
+.workItemGraphics{
+    height: 250px;
+    background-color: #263046;
+    border-radius: 10px 10px 0 0;
+}
+
+.workItemGraphicsImg{
+    width: 200px;
+    border-radius: 0 !important;
+}
