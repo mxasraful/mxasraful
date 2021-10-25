@@ -3,7 +3,7 @@
 
 >I'm a Web developer from Bangladesh.
 
-### My Portfolio Website https://mxasraful.com/
+### My Portfolio Website https://mxasraful.com
 
 <br/>
 
