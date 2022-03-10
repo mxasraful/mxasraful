@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,6 +13,8 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skill from './components/Skill/Skill';
+import './App.css';
+import './responsive.css';
 
 function App() {
   return (

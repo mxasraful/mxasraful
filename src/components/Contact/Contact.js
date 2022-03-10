@@ -73,8 +73,9 @@ const Contact = () => {
                                 className='text-light contactInputBox'
                                 id="filled-basic"
                                 label="Your Name"
-                                variant="filled"
+                                variant="outlined"
                                 color='secondary'
+                                size="small"
                                 type='name'
                                 required
                             />
@@ -83,9 +84,10 @@ const Contact = () => {
                                 className='text-light contactInputBox'
                                 id="filled-basic"
                                 label="Your Email"
-                                variant="filled"
+                                variant="outlined"
                                 color='secondary'
                                 type='email'
+                                size="small"
                                 required
                             />
                             <TextField
@@ -94,9 +96,10 @@ const Contact = () => {
                                 id="filled-basic" label="Your Message"
                                 multiline
                                 rows={4}
-                                variant="filled"
+                                variant="outlined"
                                 color='secondary'
                                 type='message'
+                                size="small"
                                 required
                             />
                             <Button type='submit' variant="contained" color="secondary">SEND MESSAGE</Button>

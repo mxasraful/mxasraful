@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className='footerMain bg_dark_blue'>
+        <footer className='footerMain bg_dark_blue footer mt-auto'>
             <div className="footerContent text-center">
                 <p className='text-light'>Design & Developed By <a className='text-danger' href="https://github.com/mxasraful">Asraful</a></p>
                 <div className="footerLinks">
