@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import pImg from './../../img/asrafuls_img.jpg'
+import pImg from './../../img/mx_asraful_2.jpg'
 
 const About = () => {
     return (
@@ -19,7 +19,7 @@ const About = () => {
                             <h3 style={{ width: '500px', margin: '0 auto' }} className="text-left text-light">
                                 {/* A person who programms professionally and happily. A programmer who stays up to date with technology.  Whose goal is to do good.  */}
                             Hello! <br />
-                                <h4>I'm Asraful Islam. I'm a Creative Programmer. I can create any kind of web application. I do Programming professionally and happily. I have 2 years of experience in the Web Development section. I love programming. I always ready to build web application that suits my interests.</h4>
+                                <h4>I'm Asraful Islam. I'm a Creative Programmer. I can create any kind of web application. I do Programming professionally and happily. I have 3 years of experience in the Web Development section. I love programming. I always ready to build web application that suits my interests.</h4>
                             </h3>
                             <br /><br />
                         </div>
