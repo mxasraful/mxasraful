@@ -1,5 +1,4 @@
 .aboutS{
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 .aboutImg img{
@@ -26,4 +25,8 @@
 .aboutText{
     width: 60%;
     margin-left: 110px;
+}
+.about-main-text h4{
+    font-size: 20px !important;
+    line-height: 42px !important;
 }

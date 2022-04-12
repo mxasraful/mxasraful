@@ -7,11 +7,11 @@ import {
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Error from './components/Error/Error';
-import Work from './components/Work/Work';
+import Portfolios from './components/Portfolios/Portfolios';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
-import Portfolio from './components/Portfolio/Portfolio';
+import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import Skill from './components/Skill/Skill';
 import './App.css';
 import './responsive.css';
@@ -25,18 +25,18 @@ function App() {
           <Route path="/about">
             <About/>
           </Route>
-          <Route path="/blog">
+          <Route path="/blog-and-videos">
             
           </Route>
           <Route path="/portfolio">
-            <Portfolio/>
+            <PortfolioPage/>
           </Route>
           <Route path="/contact">
             <Contact/>
           </Route>
           <Route exact path="/">
             <Banner/>
-            <Work/>
+            <PortfolioPage/>
             <Skill/>
           </Route>
           <Route exact path="*">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, TextField } from '@material-ui/core';
 import './Contact.css'
+import axios from 'axios';
 
 const Contact = () => {
 
@@ -23,7 +24,7 @@ const Contact = () => {
     const msgTime = `${timeHours}: ${timeMinutes}: ${timeSeconds}`
 
     const sendMsg = (e) => {
-        fetch('https://serene-peak-05996.herokuapp.com/messageSend', {
+        axios.get('/messageSend', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -40,7 +41,7 @@ const Contact = () => {
                 timeSeconds: timeSeconds,
             })
         })
-            .then(res => {
+            .then(dt => {
                 setMsgSendSuccess(true)
             })
         e.preventDefault()
@@ -106,7 +107,7 @@ const Contact = () => {
                         </form>
                         <div className="col-2 contactSpace"></div>
                         <div className="contactInfo">
-                            <h3 style={{marginTop: "100px", color: "#ffff"}}>Get In Touch</h3>
+                            <h3 style={{ marginTop: "100px", color: "#ffff" }}>Get In Touch</h3>
                             <hr />
                             <div className="text-light">
                                 <span className=''>Email:</span><br />

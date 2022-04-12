@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './Work.css';
-import spinner from './../../spinner/spinner2.svg';
-import WorkSection from '../WorkSection/WorkSection';
+import './Portfolios.css';
+import PortfolioItem from '../PortfolioItem/PortfolioItem';
+import axios from 'axios';
 
 
 const Work = () => {
@@ -10,9 +10,9 @@ const Work = () => {
     const [portfolioLoaded, setPortfolioLoaded] = useState(false)
 
     useEffect(() => {
-        fetch('https://serene-peak-05996.herokuapp.com/portfolios')
-            .then(res => res.json())
-            .then(data => {
+        axios.get('/portfolios')
+            .then(dt => {
+                const data = dt.data
                 const sortedDt = data.sort((a, b) => {
                     return parseInt(a.nu) - parseInt(b.nu)
                 })
@@ -32,7 +32,7 @@ const Work = () => {
                         portfolioLoaded ?
                             <>
                                 {workDt.map(dt =>
-                                    <WorkSection work={dt} />
+                                    <PortfolioItem work={dt} />
                                 )}
                             </>
                             :
