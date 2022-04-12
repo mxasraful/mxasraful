@@ -1,13 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import PorfolioItem from '../PortfolioItem/PortfolioItem';
+import PortfolioItem from '../PortfolioItem/PortfolioItem';
 import './PortfolioPage.css'
 
 const PortfolioPage = () => {
 
-    const [webData, setWebData] = useState([]);
+    const [webData, setWebData] = useState(null);
     const [graphicsData, setGraphicsData] = useState([]);
     const [portfoliosWeb, setPortfoliosWeb] = useState(true)
+    const [portfoliosForHome, setPortfoliosForHome] = useState(null)
 
     const [portfolioLoaded, setPortfolioLoaded] = useState(false)
 
@@ -29,6 +30,14 @@ const PortfolioPage = () => {
                 setPortfolioLoaded(true)
             });
     }, [])
+
+    useEffect(() => {
+        const dataForHome = webData?.filter(dt => dt.pinned === true)
+        setPortfoliosForHome(dataForHome)
+    }, [webData])
+
+    console.log(webData)
+    console.log(portfoliosForHome)
 
     return (
         <section style={{ paddingTop: '150px', marginBottom: '-8px' }} id="portfolio" className='portfolioMain bg_dark_blue'>
@@ -61,10 +70,10 @@ const PortfolioPage = () => {
                                                 portfoliosWeb ?
                                                     <div className="card-deck workContentMain">
                                                         {
-                                                            webData.map(wk =>
-                                                                <PorfolioItem work={wk}>
+                                                            webData?.map(wk =>
+                                                                <PortfolioItem work={wk}>
                                                                     <p className="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
-                                                                </PorfolioItem>
+                                                                </PortfolioItem>
                                                             )
                                                         }
                                                     </div>
@@ -72,9 +81,9 @@ const PortfolioPage = () => {
                                                     <div className="card-deck workContentMain">
                                                         {
                                                             graphicsData.map(wk =>
-                                                                <PorfolioItem work={wk}>
+                                                                <PortfolioItem work={wk}>
                                                                     <p className="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
-                                                                </PorfolioItem>
+                                                                </PortfolioItem>
                                                             )
                                                         }
                                                     </div>
@@ -82,7 +91,9 @@ const PortfolioPage = () => {
                                         </>
                                         :
                                         <>
-                                            
+                                            {portfoliosForHome?.map(dt =>
+                                                <PortfolioItem work={dt} />
+                                            )}
                                         </>
                                 }
                             </>
@@ -96,6 +107,15 @@ const PortfolioPage = () => {
                             </div>
                     }
                 </div>
+                {
+                    path === "/" &&
+                    <>
+                        <a href='/portfolio' style={{ float: 'right' }} className="btn btn-outline-danger btn-sm">View All</a>
+                    </>
+                }
+                <br />
+                <br />
+                <br />
             </div>
         </section>
     );
