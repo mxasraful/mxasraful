@@ -3,6 +3,7 @@ import logoImg from "./../../logo/Asraful's_logo_1.png";
 import downloadCv from './../../cv/Asrafuls_CV.pdf';
 import './Header.css'
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -10,7 +11,7 @@ const Header = () => {
         <header id='headerMain' className='bg_dark_blue'>
             <div className='container'>
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="./../../"><img style={{ width: '50px' }} src={logoImg} alt="Mx Asraful" /></a>
+                    <Link class="navbar-brand" to="/"><img style={{ width: '50px' }} src={logoImg} alt="Mx Asraful" /></Link>
                     <button style={{backgroundColor: '#ffffff40'}} class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
