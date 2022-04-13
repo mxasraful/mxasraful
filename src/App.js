@@ -7,7 +7,6 @@ import {
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Error from './components/Error/Error';
-import Portfolios from './components/Portfolios/Portfolios';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
@@ -15,6 +14,7 @@ import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import Skill from './components/Skill/Skill';
 import './App.css';
 import './responsive.css';
+import BlogAndVideos from './components/BlogAndVideos/BlogAndVideos';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
             <About/>
           </Route>
           <Route path="/blog-and-videos">
-            
+            <BlogAndVideos />
           </Route>
           <Route path="/portfolio">
             <PortfolioPage/>

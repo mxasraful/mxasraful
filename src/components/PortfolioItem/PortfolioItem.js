@@ -8,12 +8,10 @@ const WorkSection = (props) => {
             {
                 type === 'graphics' ?
                     <div className="workItemGraphics d-flex align-items-center justify-content-center">
-                        <div className="">
-                            <img alt="Mx Asraful" className="workContentImg workItemGraphicsImg" src={img} />
-                        </div>
+                        <img alt="Mx Asraful" className="workContentImg workItemGraphicsImg card-img-top" src={img} />
                     </div>
                     :
-                    <img alt="Mx Asraful" className="workContentImg" src={img} />
+                    <img alt="Mx Asraful" className="workContentImg card-img-top" src={img} />
             }
             <div style={{ width: '100%' }} className="workContentDetails">
                 <h5 className='text-info'>{title}</h5><br />

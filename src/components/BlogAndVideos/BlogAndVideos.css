@@ -1,0 +1,5 @@
+
+.vAndVItemMain:hover h5{
+    transition: all .4s;
+    color: #fff !important;
+}

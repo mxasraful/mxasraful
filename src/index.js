@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import axios from 'axios';
 
-axios.defaults.baseURL = "https://serene-peak-05996.herokuapp.com"
+axios.defaults.baseURL = "https://boiling-dusk-91818.herokuapp.com"
 
 ReactDOM.render(
   <React.StrictMode>

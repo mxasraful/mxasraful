@@ -36,11 +36,8 @@ const PortfolioPage = () => {
         setPortfoliosForHome(dataForHome)
     }, [webData])
 
-    console.log(webData)
-    console.log(portfoliosForHome)
-
     return (
-        <section style={{ paddingTop: '150px', marginBottom: '-8px' }} id="portfolio" className='portfolioMain bg_dark_blue'>
+        <section style={ path === "/portfolio" ? { paddingTop: '150px', marginBottom:'-8px' } : {}} id="portfolio" className='portfolioMain bg_dark_blue'>
             <div className="container">
                 {
                     path === "/portfolio" ?
@@ -49,10 +46,10 @@ const PortfolioPage = () => {
                             <div className='sectionTitlesBackLine'></div>
                         </>
                         :
-                        <>
+                        <div className='portfolioPageForHome' style={{marginLeft: "-15px", marginRight: "-15px"}}>
                             <h2 style={{ background: '#232a38', display: 'inline-block', paddingRight: '20px' }} className='text-light workHeader'>From My <span className="text-danger">Work</span> </h2>
                             <div className='sectionTitlesBackLine'></div>
-                        </>
+                        </div>
                 }
                 <br />
                 <div className="row">
@@ -80,7 +77,7 @@ const PortfolioPage = () => {
                                                     :
                                                     <div className="card-deck workContentMain">
                                                         {
-                                                            graphicsData.map(wk =>
+                                                            graphicsData?.map(wk =>
                                                                 <PortfolioItem work={wk}>
                                                                     <p className="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been standard.</p>
                                                                 </PortfolioItem>

@@ -104,4 +104,9 @@
     .contactInfo{
         width: 100%;
     }
+
+    /* Porfolio Page */
+    .portfolioPageForHome{
+      margin: 0 !important;
+    }
   }

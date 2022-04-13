@@ -1,12 +1,38 @@
-
-
-.workItemGraphics{
+.workItemGraphics {
     height: 250px;
     background-color: #263046;
     border-radius: 10px 10px 0 0;
 }
 
-.workItemGraphicsImg{
-    width: 200px;
+.workItemGraphicsImg {
+    width: auto !important;
+    height: 88% !important;
     border-radius: 0 !important;
+}
+
+.workContent {
+    display: block;
+    margin-bottom: 50px;
+    text-decoration: none !important;
+}
+
+.workContentDetails {
+    padding: 20px 20px 20px 40px;
+    background-color: #1b203a;
+    border-radius: 0 0 12px 12px;
+}
+
+.workContent div a svg {
+    margin-top: 15px !important;
+    margin-right: 15px !important;
+}
+
+.workContentImg {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.useLanguageAndTools {
+    display: flex;
+    flex-wrap: wrap;
 }
