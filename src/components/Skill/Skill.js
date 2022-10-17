@@ -1,14 +1,33 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import skillData from '../../skillData';
 import SkillOnly from '../SkillOnly/SkillOnly';
 import './Skill.css'
 
 const Skill = () => {
 
-    const skillDataAll = skillData.slice(0, 8)
+    const [skillDataAll, setSkillDataAll] = useState(null)
     const skillDataProgramming = skillData.filter(pd => pd.catagories === 'lf')
     const skillDataTools = skillData.filter(pd => pd.catagories === 'to')
     const skillDataOthers = skillData.filter(pd => pd.catagories === 'ot')
+
+    const [seeAllSkillBtn, setAllSkillBtn] = useState(true)
+
+
+    // Set Initial Data For All Skills Tab
+    useEffect(() => {
+        setSkillDataAll(skillData.slice(0, 8))
+        setAllSkillBtn(true)
+    }, [])
+
+    // Set All Data For All Skills Tab
+    const setAllInAllSkills = () => {
+        setSkillDataAll(skillData)
+        setAllSkillBtn(false)
+    }
+
+    // console.log(skillDataAll)
 
     return (
         <section id='skill' className='skillMain bg_dark_blue'>
@@ -36,7 +55,13 @@ const Skill = () => {
                         <div class="tab-content skillSection" id="myTabContent">
                             <div class="card-deck tab-pane fade show active" id="skillAll" role="tabpanel" aria-labelledby="home-tab">
                                 {
-                                    skillDataAll.map(dt => <SkillOnly dt={dt}></SkillOnly>)
+                                    skillDataAll?.map(dt => <SkillOnly dt={dt}></SkillOnly>)
+                                }
+                                {
+                                    seeAllSkillBtn &&
+                                    <div className="text-center mt-4 mb-5">
+                                        <button className="px-5 py-1 btn btn-outline-danger " onClick={() => setAllInAllSkills()}>See All Skills</button>
+                                    </div>
                                 }
                             </div>
                             <div class="tab-pane fade" id="skillProgramming" role="tabpanel" aria-labelledby="skillPTab">

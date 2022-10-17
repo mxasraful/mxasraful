@@ -21,7 +21,7 @@ const BlogAndVideos = () => {
         <div className='blogAndVideosMain bg_dark_blue' style={{ paddingTop: "150px", marginBottom: '-8px' }}>
             <div className="container">
                 <>
-                    <h2 style={{ background: '#232a38', display: 'inline-block', paddingRight: '20px' }} className='text-info workHeader'>My Portfolio</h2>
+                    <h2 style={{ background: '#232a38', display: 'inline-block', paddingRight: '20px' }} className='text-info workHeader'>Blog & Videos</h2>
                     <div className='sectionTitlesBackLine'></div>
                 </>
                 <br /><br />

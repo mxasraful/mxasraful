@@ -37,7 +37,7 @@ const PortfolioPage = () => {
     }, [webData])
 
     return (
-        <section style={ path === "/portfolio" ? { paddingTop: '150px', marginBottom:'-8px' } : {}} id="portfolio" className='portfolioMain bg_dark_blue'>
+        <section style={ path === "/portfolio" ? { paddingTop: '150px', marginBottom:'-8px', minHeight: "90vh" } : {}} id="portfolio" className='portfolioMain bg_dark_blue '>
             <div className="container">
                 {
                     path === "/portfolio" ?

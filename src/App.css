@@ -3,8 +3,8 @@
   outline: none !important;
 }
 
-.nav_resume {
-  /* margin-left: ; */
+.main-section{
+  min-height: 90vh !important;
 }
 
 .bg_dark_blue {

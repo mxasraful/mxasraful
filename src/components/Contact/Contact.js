@@ -12,7 +12,7 @@ const Contact = () => {
     const [msgText, setMsgText] = useState("")
 
     // get users messaging Date
-    const dateYear = new Date().getFullYear()
+    const dateYear = new Date().getFullYear()                                                                                      
     const dateMonth = new Date().getMonth()
     const dateDay = new Date().getDate()
     const msgDate = `${dateDay} / ${dateMonth} / ${dateYear} `
@@ -48,9 +48,23 @@ const Contact = () => {
         e.target.reset()
     }
 
+    // console.log({
+    //     name: msgName,
+    //     email: msgEmail,
+    //     message: msgText,
+    //     date: msgDate,
+    //     dateYear: dateYear,
+    //     dateMonth: dateMonth,
+    //     dateDay: dateDay,
+    //     time: msgTime,
+    //     timeHours: timeHours,
+    //     timeMinutes: timeMinutes,
+    //     timeSeconds: timeSeconds,
+    // })
+
 
     return (
-        <section style={{ paddingTop: '150px' }} className='contactMain bg_dark_blue'>
+        <section style={{ paddingTop: '150px' }} className='contactMain bg_dark_blue main-section'>
             <div className="container">
                 <div className="row">
                     <br /><br /><br />
@@ -115,7 +129,7 @@ const Contact = () => {
                             </div>
                             <div className="text-light">
                                 <span className=''>Phone:</span><br />
-                                <a className="text-light" href="tel: +8801821892715">+880 1821-892715</a>
+                                <a className="text-light" href="tel: +8801647244050">+880 1647-244050</a>
                             </div>
                             <div style={{ width: '250px' }} className="text-light">
                                 <span className=''>Social:</span><br />
