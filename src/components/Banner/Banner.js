@@ -44,7 +44,7 @@ const Banner = () => {
                     </div> */}
                 </div>
                 <div style={{ width: '35%', marginTop: '60px' }} className="bannerPhoto">
-                    <img style={{ width: '100%' }} src={bannerImg} alt="Mx Asraful" />
+                    <img className="rounded" style={{ width: '100%' }} src={bannerImg} alt="Mx Asraful" />
                 </div>
             </div>
         </section>

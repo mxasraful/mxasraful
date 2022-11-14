@@ -12,7 +12,7 @@ const Contact = () => {
     const [msgText, setMsgText] = useState("")
 
     // get users messaging Date
-    const dateYear = new Date().getFullYear()                                                                                      
+    const dateYear = new Date().getFullYear()
     const dateMonth = new Date().getMonth()
     const dateDay = new Date().getDate()
     const msgDate = `${dateDay} / ${dateMonth} / ${dateYear} `
@@ -43,6 +43,10 @@ const Contact = () => {
         })
             .then(dt => {
                 setMsgSendSuccess(true)
+                console.log(dt)
+            })
+            .catch(error => {
+                
             })
         e.preventDefault()
         e.target.reset()
