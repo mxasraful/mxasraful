@@ -34,7 +34,7 @@ const Skill = () => {
             <div className="container">
                 <div className="row">
                     <br /><br /><br />
-                    <h2 className="pageTitle text-light">My <span className="text-danger">Skill</span></h2>
+                    <h2 className="pageTitle text-light">My <span className="text-danger">Skills</span></h2>
                     <div class="sectionTitlesBackLine"></div>
                     <br /><br />
                     <div className="allSkillSection">

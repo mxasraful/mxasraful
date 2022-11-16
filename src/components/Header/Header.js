@@ -31,7 +31,7 @@ const Header = () => {
                             </li>
                         </ul>
                         <div class="nav_resume" >
-                            <a href={downloadCv} download="Asrafuls_CV.pdf" class="btn btn-outline-danger">RESUME</a>
+                            <a href={downloadCv} download="Asrafuls_CV.pdf" class="btn btn-outline-danger px-4">RESUME</a>
                         </div>
                     </div>
                 </nav>

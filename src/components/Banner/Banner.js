@@ -13,14 +13,16 @@ const Banner = () => {
                 <div style={{ width: '65%' }} className="bannerText">
                     <br /><br /><br />
                     <h5 className='text-danger'>Hello, I'm</h5><br />
-                    <h2 className='text-info bannerName'>Asraful Islam</h2>
+                    <h2 className='text-info bannerName'>Mx Asraful</h2>
                     <div className="bannerSkill text-danger">
+                        <span>Entrepreneur</span>
                         <span>Programmer</span>
-                        <span>Web Developer</span>
                     </div>
-                    <div className="bannerTxt">
+                    <div className="bannerTxt ">
                         <br />
-                        <span style={{ width: '44%', display: 'block' }} className='text-light'>A person who programms professionally and happily. A programmer who stays up to date with technology. Whose goal is to do good.</span>
+                        <span style={{ width: '50%', display: 'block' }} className='text-light'>
+                            Mx Asraful Is a Entrepreneur. He is also a Programmer. He is the CEO and Founder of AsrafulWeb a digital agency that provides clients with all types of digital business services such as Web Development, Digital Marketing, and others.
+                        </span>
                     </div>
                     <div className="bannerSocialLinks">
                         <a target='blank' href="https://github.com/mxasraful" className='bannerSocial bannerSocialGh'>
