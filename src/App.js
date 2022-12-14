@@ -20,31 +20,31 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
+        <Header />
         <Switch>
+          <Route exact path="/">
+            <Banner />
+            <PortfolioPage />
+            <Skill />
+          </Route>
           <Route path="/about">
-            <About/>
+            <About />
           </Route>
           <Route path="/blog-and-videos">
             <BlogAndVideos />
           </Route>
           <Route path="/portfolio">
-            <PortfolioPage/>
+            <PortfolioPage />
           </Route>
           <Route path="/contact">
-            <Contact/>
+            <Contact />
           </Route>
-          <Route exact path="/">
-            <Banner/>
-            <PortfolioPage/>
-            <Skill/>
-          </Route>
-          <Route exact path="*">
-            <Error/>
+          <Route path="*">
+            <Error />
           </Route>
         </Switch>
       </Router>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
