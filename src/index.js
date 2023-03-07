@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import axios from 'axios';
 
-axios.defaults.baseURL = "https://mxasraful-backend.vercel.app/"
+axios.defaults.baseURL = "https://mxasraful.up.railway.app/"
 
 ReactDOM.render(
   <React.StrictMode>
