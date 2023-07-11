@@ -36,7 +36,8 @@
 <br />
 <br />
 
-![Asraful's github stats]([https://github-readme-stats.vercel.app/api?username=mxasraful&show_icons=true&theme=dark](https://github-readme-stats.vercel.app/api?username=mxasraful&theme=github_dark_dimmed))
+
+![Asraful's github stats]([https://github-readme-stats.vercel.app/api?username=mxasraful&show_icons=true&theme=dark])
 
 <br />
 
