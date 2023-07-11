@@ -36,7 +36,13 @@
 <br />
 <br />
 
+
+## Stats
+
 ![Asrafuls's GitHub stats](https://github-readme-stats.vercel.app/api?username=mxasraful&theme=github_dark_dimmed)
+<br />
+
+![Asrafuls's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mxasraful&theme=github_dark_dimmed)
 
 <br />
 
