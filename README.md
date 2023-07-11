@@ -7,12 +7,12 @@
 
 <br/>
 
-### Contact & Follow Me:
+### Social & Other Links:
 
-[![LinkedIn Connect](https://cdn2.iconfinder.com/data/icons/social-18/512/LinkedIn-20.png)](https://www.linkedin.com/in/mxasraful/) 
-[![Facebook Follow](https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-20.png)](https://facebook.com/mxasrafulofficial/) 
-[![Twitter Follow](https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-twitter-20.png)](https://twitter.com/MxAsraful) 
-[![Medium Follow](https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/medium-20.png)](https://mxasraful.medium.com/) 
+[![LinkedIn](https://cdn2.iconfinder.com/data/icons/social-18/512/LinkedIn-20.png)](https://www.linkedin.com/in/mxasraful/) 
+[![Facebook](https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-20.png)](https://facebook.com/mxasrafulofficial/) 
+[![Twitter](https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-twitter-20.png)](https://twitter.com/MxAsraful) 
+[![Medium](https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/medium-20.png)](https://mxasraful.medium.com/) 
 
 
 <br />
@@ -47,6 +47,6 @@
 <br />
 
 
-[twfollow]: https://twitter.com/intent/follow?screen_name=mxasraful
-[github]: https://github.com/mxasraful
-[linkedin]: https://www.linkedin.com/in/mxasraful
+## Contact With Me
+[![Website]](https://mxasraful.com/contact) 
+[![Email Me]](mxasraful@outlook.com) 
